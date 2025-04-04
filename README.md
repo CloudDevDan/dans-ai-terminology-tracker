@@ -4,7 +4,7 @@ Welcome to **Dan’s AI Terminology Tracker** — an open, visual, and structure
 
 This resource is built using [**Markmap**](https://markmap.js.org/), a JavaScript-powered tool that turns Markdown lists into **interactive mind maps**. The result is a dynamic, explorable way to understand and organize terminology across a broad AI landscape - from foundational learning paradigms to Microsoft-specific AI services.
 
-[![View the Interactive Map](https://img.shields.io/badge/View%20AI%20Mind%20Map-Live-blue?style=for-the-badge)](https://clouddevdan.github.io/dans-ai-terminology-tracker/)
+[![View the Interactive Map](https://img.shields.io/badge/View%20AI%20Mind%20Map-Live-blue?style=for-the-badge)](https://clouddevdan.github.io/dans-ai-terminology-tracker/){:target="_blank"}
 
 ---
 
@@ -60,8 +60,42 @@ If you’re part of the Microsoft AI community, or just exploring AI terminology
 
 This project is licensed under the **MIT License** — you're free to use, share, remix, and build upon it, as long as attribution is given.
 
+---
 
+## 🛠 How It's Built
 
+This project uses [Markmap](https://markmap.js.org) to convert a Markdown list into an interactive mind map.  
+After exporting the map, a custom **post-processing script** applies visual enhancements including:
 
+- Dark mode theme
+- Custom font and header
+- White text and dark background for readability
+- A favicon
+- Branding and blog link
 
-<!-- npx markmap-cli markmap.md -o ./docs/index.html --no-open && node postprocess-map.js -->
+---
+
+## ⚙️ Setup Instructions
+
+Install the Markmap CLI (if not already installed):
+
+```bash
+npm install -g markmap-cli
+```
+
+Then run this command from the root of the repo:
+
+```bash
+npx markmap-cli markmap.md -o ./docs/index.html && node postprocess-map.js
+```
+
+This generates the visual map and applies styling in one go.
+
+---
+
+## 🌐 Why the `/docs` Folder?
+
+The `docs` folder is used because GitHub Pages can be configured to serve static content from it.  
+This means your `index.html` is published at:
+
+📍 `https://clouddevdan.github.io/dans-ai-terminology-tracker/index.html`
