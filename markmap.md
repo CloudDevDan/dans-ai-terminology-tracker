@@ -1,9 +1,12 @@
 ---
-title: AI/ML Mind Map (Comprehensive)
+title: Dan’s AI Terminology Tracker
 markmap:
   colorFreezeLevel: 2
   activeNode:
-    placement: center
+  placement: center
+  initialExpandLevel: 3
+  extraCss: |
+    - ./dark-mode.css
 ---
 
 # Artificial Intelligence
