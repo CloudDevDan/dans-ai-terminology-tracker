@@ -59,3 +59,9 @@ If you’re part of the Microsoft AI community, or just exploring AI terminology
 ## 🪪 License
 
 This project is licensed under the **MIT License** — you're free to use, share, remix, and build upon it, as long as attribution is given.
+
+
+
+
+
+npx markmap-cli markmap.md -o ./docs/index.html --no-open && node postprocess-map.js
