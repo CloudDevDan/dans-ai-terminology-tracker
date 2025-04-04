@@ -64,4 +64,4 @@ This project is licensed under the **MIT License** — you're free to use, share
 
 
 
-npx markmap-cli markmap.md -o ./docs/index.html --no-open && node postprocess-map.js
+<!-- npx markmap-cli markmap.md -o ./docs/index.html --no-open && node postprocess-map.js -->
