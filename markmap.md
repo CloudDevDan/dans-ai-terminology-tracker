@@ -6,7 +6,7 @@ markmap:
   placement: center
   initialExpandLevel: 3
   extraCss: |
-    - ./dark-mode.css
+    - https://clouddevdan.github.io/dans-ai-terminology-tracker/dark-mode.css
 ---
 
 # Artificial Intelligence
