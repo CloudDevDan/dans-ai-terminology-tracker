@@ -31,27 +31,27 @@ markmap:
 - <a href="https://huggingface.co/learn/nlp-course/chapter5/5?fw=pt" target="_blank">Contrastive Learning</a> – Learn by distinguishing between similar and dissimilar examples.  
 
 ### Core Concepts
-- Model
-- Dataset
-- Labeled Data
-- Feature
-- Label
-- Epoch
-- Batch
-- Loss Function
-- Optimizer
-- Regularization
-- Overfitting
-- Underfitting
-- Bias-Variance Tradeoff
-- Hyperparameters
+- <a href="https://learn.microsoft.com/en-us/azure/machine-learning/concept-azure-machine-learning-architecture#models" target="_blank">Model</a> – A trained representation that maps input data to outputs based on learned patterns.
+- <a href="https://learn.microsoft.com/en-us/azure/machine-learning/concept-data" target="_blank">Dataset</a> – A collection of data used for training, validating, or testing models.
+- <a href="https://en.wikipedia.org/wiki/Training,_validation,_and_test_data" target="_blank">Labeled Data</a> – Data paired with correct output values used in supervised learning.
+- <a href="https://en.wikipedia.org/wiki/Feature_(machine_learning)" target="_blank">Feature</a> – An individual measurable property of the data used for making predictions.
+- <a href="https://learn.microsoft.com/en-us/azure/machine-learning/concept-azure-machine-learning-architecture#data-labels" target="_blank">Label</a> – The target variable or output that the model aims to predict.
+- <a href="https://www.ibm.com/cloud/learn/epoch-machine-learning" target="_blank">Epoch</a> – One complete pass through the entire training dataset.
+- <a href="https://en.wikipedia.org/wiki/Batch_normalization" target="_blank">Batch</a> – A subset of training data used in a single iteration of model training.
+- <a href="https://en.wikipedia.org/wiki/Loss_function" target="_blank">Loss Function</a> – A function that measures the difference between predicted and actual outputs.
+- <a href="https://en.wikipedia.org/wiki/Stochastic_gradient_descent" target="_blank">Optimizer</a> – Algorithm used to minimize the loss function during training.
+- <a href="https://en.wikipedia.org/wiki/Regularization_(mathematics)" target="_blank">Regularization</a> – Techniques to reduce overfitting by penalizing model complexity.
+- <a href="https://en.wikipedia.org/wiki/Overfitting" target="_blank">Overfitting</a> – When a model learns the training data too well and performs poorly on new data.
+- <a href="https://en.wikipedia.org/wiki/Underfitting" target="_blank">Underfitting</a> – When a model is too simple to capture the patterns in the data.
+- <a href="https://en.wikipedia.org/wiki/Bias–variance_tradeoff" target="_blank">Bias-Variance Tradeoff</a> – Balancing error due to bias and variance to improve model performance.
+- <a href="https://en.wikipedia.org/wiki/Hyperparameter_optimization" target="_blank">Hyperparameters</a> – Configuration variables set before training that influence model behavior.
 - Evaluation Metrics
-  - Accuracy
-  - Precision
-  - Recall
-  - F1 Score
-  - ROC-AUC
-- Cross-validation
+  - <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html" target="_blank">Accuracy</a> – Proportion of correct predictions made by the model.
+  - <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html" target="_blank">Precision</a> – Proportion of predicted positives that are actually positive.
+  - <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall_score.html" target="_blank">Recall</a> – Proportion of actual positives that are correctly predicted.
+  - <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html" target="_blank">F1 Score</a> – Harmonic mean of precision and recall.
+  - <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html" target="_blank">ROC-AUC</a> – Measures a classifier’s ability to distinguish between classes.
+- <a href="https://scikit-learn.org/stable/modules/cross_validation.html" target="_blank">Cross-validation</a> – Technique for assessing model performance by splitting data into multiple train-test subsets.
 
 ### Algorithms
 - Linear Regression
