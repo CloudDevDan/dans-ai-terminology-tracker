@@ -54,23 +54,23 @@ markmap:
 - <a href="https://scikit-learn.org/stable/modules/cross_validation.html" target="_blank">Cross-validation</a> – Technique for assessing model performance by splitting data into multiple train-test subsets.
 
 ### Algorithms
-- Linear Regression
-- Logistic Regression
-- Decision Tree
-- Random Forest
-- k-Nearest Neighbors
-- Support Vector Machine (SVM)
-- Naive Bayes
-- XGBoost
-- Gradient Boosting Machines
+- <a href="https://scikit-learn.org/stable/modules/linear_model.html#linear-regression" target="_blank">Linear Regression</a> – Predicts a continuous outcome based on the linear relationship between features.
+- <a href="https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression" target="_blank">Logistic Regression</a> – Predicts binary or multiclass outcomes using a logistic function.
+- <a href="https://scikit-learn.org/stable/modules/tree.html#classification" target="_blank">Decision Tree</a> – A tree-like model used for classification or regression by learning decision rules.
+- <a href="https://scikit-learn.org/stable/modules/ensemble.html#random-forests" target="_blank">Random Forest</a> – An ensemble of decision trees that improves accuracy by averaging predictions.
+- <a href="https://scikit-learn.org/stable/modules/neighbors.html#classification" target="_blank">k-Nearest Neighbors</a> – Classifies data based on the majority label among its nearest neighbors.
+- <a href="https://scikit-learn.org/stable/modules/svm.html" target="_blank">Support Vector Machine (SVM)</a> – Finds the optimal boundary (hyperplane) that best separates classes in the feature space.
+- <a href="https://scikit-learn.org/stable/modules/naive_bayes.html" target="_blank">Naive Bayes</a> – Probabilistic classifier based on Bayes’ theorem with strong (naive) independence assumptions.
+- <a href="https://xgboost.readthedocs.io/en/stable/" target="_blank">XGBoost</a> – Gradient boosting framework known for speed and performance in structured data tasks.
+- <a href="https://scikit-learn.org/stable/modules/ensemble.html#gradient-boosting" target="_blank">Gradient Boosting Machines</a> – Builds models sequentially, each one correcting the errors of its predecessor.
 - Clustering
-  - K-means
-  - Hierarchical
-  - DBSCAN
+  - <a href="https://scikit-learn.org/stable/modules/clustering.html#k-means" target="_blank">K-means</a> – Partitions data into K clusters based on proximity to cluster centroids.
+  - <a href="https://scikit-learn.org/stable/modules/clustering.html#hierarchical-clustering" target="_blank">Hierarchical</a> – Builds nested clusters by successively merging or splitting them.
+  - <a href="https://scikit-learn.org/stable/modules/clustering.html#dbscan" target="_blank">DBSCAN</a> – Groups data based on density, identifying clusters of arbitrary shape and handling outliers.
 - Dimensionality Reduction
-  - PCA
-  - t-SNE
-  - UMAP
+  - <a href="https://scikit-learn.org/stable/modules/decomposition.html#pca" target="_blank">PCA (Principal Component Analysis)</a> – Reduces the dimensionality of data by projecting it onto principal components.
+  - <a href="https://scikit-learn.org/stable/modules/manifold.html#t-sne" target="_blank">t-SNE</a> – Non-linear technique for visualizing high-dimensional data in 2 or 3 dimensions.
+  - <a href="https://umap-learn.readthedocs.io/en/latest/" target="_blank">UMAP</a> – Fast and scalable dimensionality reduction technique for visualizing structure in data.
 
 ## Deep Learning
 
