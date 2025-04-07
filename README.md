@@ -1,12 +1,12 @@
 # 🧠 Dan’s AI Terminology Tracker
 > 🚧 **This project is a work in progress** – contributions are welcome!  
-> Found a broken link, missing concept, or new Microsoft AI tool? [Open an issue or pull request](https://github.com/clouddevdan/dans-ai-terminology-tracker).
+> Found a broken link, missing concept, or new Microsoft AI tool? Open an issue or pull request.
 
 Welcome to **Dan’s AI Terminology Tracker** - an open, visual, and structured reference map of key concepts, terms, and technologies in Artificial Intelligence and Machine Learning.
 
 This resource is built using [**Markmap**](https://markmap.js.org/), a JavaScript-powered tool that turns Markdown lists into **interactive mind maps**. The result is a dynamic, explorable way to understand and organize terminology across a broad AI landscape - from foundational learning paradigms to Microsoft-specific AI services.
 
-<a href="https://clouddevdan.github.io/dans-ai-terminology-tracker/" target="_blank">
+<a href="https://ai-terms.daniel.mcloughlin.cloud/" target="_blank">
   <img src="https://img.shields.io/badge/View%20AI%20Mind%20Map-Live-blue?style=for-the-badge" alt="View the Interactive Map" />
 </a>
 
@@ -19,8 +19,7 @@ As I continue my own journey studying AI, I’ve created this tracker to:
 - Support my ongoing content series on **Azure AI Foundry**
 - Help others in the **AI, ML, and Microsoft Azure communities** navigate terminology more easily
 
-📘 I’m documenting my learning journey here:  
-[daniel.mcloughlin.cloud/series/azureai](https://daniel.mcloughlin.cloud/series/azureai)
+📘 View my Azure AI Foundry content series here: [daniel.mcloughlin.cloud/series/azureai](https://daniel.mcloughlin.cloud/series/azureai)
 
 
 ### Screenshots
