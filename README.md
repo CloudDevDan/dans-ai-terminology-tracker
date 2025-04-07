@@ -30,6 +30,28 @@ As I continue my own journey studying AI, I’ve created this tracker to:
   <img src="./img/expanded.jpg" alt="Dan’s AI Terminology Tracker Screenshot - Expanded Nodes" width="800" />
 </p>
 
+## ✅ Section Progress Tracker
+
+| Section                     | Status     | Notes                                  |
+|-----------------------------|------------|----------------------------------------|
+| Core Concepts (ML)          | ✅ Complete | Definitions and links added            |
+| Learning Paradigms          | ✅ Complete | Fully populated with links             |
+| Algorithms                  | ⬜ To Do    | Placeholder terms only                 |
+| Architectures (Deep Learning)| ⬜ To Do   | Placeholder terms only                 |
+| Components (DL)             | ⬜ To Do    | Needs definitions and sources          |
+| Generative AI - Models      | ⬜ To Do    | Terms listed, needs enrichment         |
+| Generative AI - Techniques  | ⬜ To Do    | Terms listed, needs enrichment         |
+| Generative AI - Concepts    | ⬜ To Do    | Terms listed, needs enrichment         |
+| MLOps Practices             | ⬜ To Do    | Terms listed, needs context + links    |
+| GenAIOps Additions          | ⬜ To Do    | Terms listed, needs context + links    |
+| GenAIOps Tooling            | ✅ Complete | Links + descriptions populated         |
+| Data & Pipelines            | ⬜ To Do    | Terms listed, no descriptions yet      |
+| Microsoft AI Stack          | ✅ Complete | Fully linked and structured            |
+| Ethics, Safety & Governance | ✅ Partial | Needs some definition/links cleanup    |
+| GenAI Platform Features     | ✅ Complete | Responses API, PTU, Spillover done     |
+| Infrastructure & Deployment | ✅ Complete | Sidecar and landing zone added         |
+| Tools & Frameworks          | ⬜ To Do    | Tools listed, but not described        |
+| Related Fields (NLP, CV, Speech) | ⬜ To Do | Terms listed, no descriptions yet     |
 
 ---
 
