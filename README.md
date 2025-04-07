@@ -7,7 +7,7 @@ Welcome to **Dan’s AI Terminology Tracker** - an open, visual, and structured 
 This resource is built using [**Markmap**](https://markmap.js.org/), a JavaScript-powered tool that turns Markdown lists into **interactive mind maps**. The result is a dynamic, explorable way to understand and organize terminology across a broad AI landscape - from foundational learning paradigms to Microsoft-specific AI services.
 
 <a href="https://ai-terms.daniel.mcloughlin.cloud/" target="_blank">
-  <img src="https://img.shields.io/badge/View%20AI%20Mind%20Map-Live-blue?style=for-the-badge" alt="View the Interactive Map" />
+  <img src="https://img.shields.io/badge/View%20The%20Interactive%20Map-Live-blue?style=for-the-badge" alt="View the Interactive Map" />
 </a>
 
 ---
