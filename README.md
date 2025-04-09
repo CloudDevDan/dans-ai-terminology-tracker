@@ -34,26 +34,26 @@ As I continue my own journey studying AI, I’ve created this tracker to:
 
 This project is a work in progress.
 
-| Section                          | Status     |
-|----------------------------------|------------|
-| Core Concepts (ML)               | ✅ Complete |
-| Learning Paradigms               | ✅ Complete |
-| Algorithms                       | ✅ Complete |
-| Architectures (Deep Learning)    | ⬜ To Do    |
-| Components (DL)                  | ⬜ To Do    |
-| Generative AI - Models           | ⬜ To Do    |
-| Generative AI - Techniques       | ⬜ To Do    |
-| Generative AI - Concepts         | ⬜ To Do    |
-| MLOps Practices                  | ⬜ To Do    |
-| GenAIOps Additions               | ⬜ To Do    |
-| GenAIOps Tooling                 | ✅ Complete |
-| Data & Pipelines                 | ⬜ To Do    |
-| Microsoft AI Stack               | ✅ Complete |
-| Ethics, Safety & Governance      | ✅ Partial  |
-| GenAI Platform Features          | ✅ Complete |
-| Infrastructure & Deployment      | ✅ Complete |
-| Tools & Frameworks               | ⬜ To Do    |
-| Related Fields (NLP, CV, Speech) | ⬜ To Do    |
+| Section                          | Status       | Markmap Section Heading                |
+|----------------------------------|--------------|----------------------------------------|
+| Core Concepts (ML)               | ✅ Complete   | Machine Learning / Core Concepts       |
+| Learning Paradigms               | ✅ Complete   | Machine Learning / Learning Paradigms  |
+| Algorithms                       | ✅ Complete   | Machine Learning / Algorithms          |
+| Architectures (Deep Learning)    | ✅ Complete   | Deep Learning / Architectures          |
+| Components (DL)                  | ✅ Complete   | Deep Learning / Components             |
+| Generative AI - Models           | ⬜ To Do      | Generative AI / Models                 |
+| Generative AI - Techniques       | ⬜ To Do      | Generative AI / Techniques             |
+| Generative AI - Concepts         | ⬜ To Do      | Generative AI / Concepts               |
+| MLOps Practices                  | ⬜ To Do      | MLOps & GenAIOps / MLOps Practices     |
+| GenAIOps Additions               | ⬜ To Do      | MLOps & GenAIOps / GenAIOps Additions  |
+| GenAIOps Tooling                 | ✅ Complete   | MLOps & GenAIOps / GenAIOps Tooling    |
+| Data & Pipelines                 | ⬜ To Do      | Data & Pipelines                       |
+| Microsoft AI Stack               | ✅ Complete   | Microsoft AI Stack                     |
+| Ethics, Safety & Governance      | ✅ Partial    | Ethics, Safety & Governance            |
+| GenAI Platform Features          | ✅ Complete   | GenAI Platform Features                |
+| Infrastructure & Deployment      | ✅ Complete   | Infrastructure & Deployment            |
+| Tools & Frameworks               | ⬜ To Do      | Tools & Frameworks                     |
+| Related Fields (NLP, CV, Speech) | ⬜ To Do      | Related Fields                         |
 
 ---
 

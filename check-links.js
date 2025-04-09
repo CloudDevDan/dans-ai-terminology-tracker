@@ -7,7 +7,8 @@ const markdownFile = 'markmap.md';
 const logFile = 'broken-links.log';
 
 const trusted403 = new Set([
-  'https://research.ibm.com/blog/what-is-federated-learning'
+  'https://research.ibm.com/blog/what-is-federated-learning',
+  'https://machinelearningmastery.com/the-attention-mechanism-from-scratch/'
 ]);
 
 let currentSection = '';
