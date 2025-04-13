@@ -1,70 +1,92 @@
 const fs = require('fs');
-const path = './docs/index.html'; // Path to your Markmap export
+const path = require('path');
 
-let html;
-try {
-  html = fs.readFileSync(path, 'utf8');
-} catch (err) {
-  console.error(`❌ Error reading ${path}:`, err.message);
-  process.exit(1);
+const docsDir = './docs';
+const indexPath = path.join(docsDir, 'index.html');
+const sectionsDir = path.join(docsDir, 'sections');
+
+function generateMenuHtml(currentFilePath) {
+  const inSection = currentFilePath.includes('/sections/');
+  const relToRoot = inSection ? '../' : '';
+  const relToSections = inSection ? '' : 'sections/';
+
+  const sectionFiles = fs.existsSync(sectionsDir)
+    ? fs.readdirSync(sectionsDir).filter(f => f.endsWith('.html'))
+    : [];
+
+  let html = `
+<!-- MENU START -->
+<style>
+  nav {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  nav a {
+    text-decoration: none;
+    font-weight: 500;
+    background: #f2f4f8;
+    padding: 6px 14px;
+    border-radius: 8px;
+    color: #0078d4;
+    transition: background 0.2s;
+  }
+  nav a:hover {
+    background: #e0e6ee;
+  }
+</style>
+<nav>
+  <a href="${relToRoot}index.html">🧠 All Terms</a>`;
+
+  sectionFiles.forEach(file => {
+    const filePath = path.join(sectionsDir, file);
+    const content = fs.readFileSync(filePath, 'utf-8');
+    const match = content.match(/<text[^>]*>(.*?)<\/text>/i);
+    const label = match ? match[1].replace(/<\/?[^>]+(>|$)/g, '') : file.replace('.html', '');
+    const labelClean = label.charAt(0).toUpperCase() + label.slice(1);
+    html += `<a href="${relToSections}${file}">${labelClean}</a>`;
+  });
+
+  html += '</nav>\n<!-- MENU END -->';
+  return html;
 }
 
-// ✅ Inject favicon and manifest links if missing
-if (!html.includes('apple-touch-icon')) {
-  html = html.replace('</head>', `<link rel="icon" type="image/png" href="favicon/favicon.png">
+function postprocessHtmlFile(filepath) {
+  let html = fs.readFileSync(filepath, 'utf-8');
+
+  html = html.replace(/<!-- MENU START -->[\s\S]*?<!-- MENU END -->/, '');
+
+  if (!html.includes('apple-touch-icon')) {
+    html = html.replace('</head>', `<link rel="icon" type="image/png" href="favicon/favicon.png">
 <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 <link rel="manifest" href="favicon/site.webmanifest">
 </head>`);
-}
+  }
 
-// ✅ Update <title>
-html = html.replace(
-  /<title>.*?<\/title>/,
-  '<title>Dan’s AI Terminology Tracker</title>'
-);
+  html = html.replace(/<title>.*?<\/title>/, '<title>Dan’s AI Terminology Tracker</title>');
 
-// ✅ Update #mindmap style with dark background + white text
-html = html.replace(
-  /#mindmap\s*\{[^}]*\}/,
-  match => {
+  html = html.replace(/#mindmap\s*\{[^}]*\}/, match => {
     let updated = match;
-    if (!updated.includes('color')) {
-      updated = updated.replace('}', '  color: white;\n}');
-    }
-    if (!updated.includes('background-color')) {
-      updated = updated.replace('}', '  background-color: #1a1b26;\n}');
-    }
+    if (!updated.includes('color')) updated = updated.replace('}', '  color: white;\n}');
+    if (!updated.includes('background-color')) updated = updated.replace('}', '  background-color: #1a1b26;\n}');
     return updated;
-  }
-);
+  });
 
-// ✅ Update <body> CSS block to include dark background
-html = html.replace(
-  /body\s*\{[^}]*\}/,
-  match => {
-    if (!match.includes('background-color')) {
-      return match.replace('}', '  background-color: #1a1b26;\n}');
-    }
-    return match;
-  }
-);
+  html = html.replace(/body\s*\{[^}]*\}/, match => {
+    return match.includes('background-color') ? match : match.replace('}', '  background-color: #1a1b26;\n}');
+  });
 
-// ✅ Replace <body> tag with a clean one (prevents rendering bugs)
-html = html.replace(
-  /<body[^>]*>/,
-  '<body style="background-color: #1a1b26;">'
-);
+  html = html.replace(/<body[^>]*>/, '<body style="background-color: #1a1b26;">');
 
-
-// ✅ Inject styled header block with external toggle button
-const headerHTML = `
+  const headerHTML = `
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <style>
-  body {
-    font-family: 'Inter', sans-serif;
-  }
+  body { font-family: 'Inter', sans-serif; }
   #toggleHeaderButton {
     position: fixed;
     top: 1rem;
@@ -129,12 +151,22 @@ const headerHTML = `
 </script>
 `;
 
-html = html.replace('<body style="background-color: #1a1b26;">', `<body style="background-color: #1a1b26;">\n${headerHTML}`);
+  html = html.replace('<body style="background-color: #1a1b26;">', `<body style="background-color: #1a1b26;">\n${headerHTML}`);
+  html = html.replace('</header>', `${generateMenuHtml(filepath)}</header>`);
 
-// ✅ Save file
-try {
-  fs.writeFileSync(path, html);
-  console.log(`✅ Post-processing complete. Updated: ${path}`);
-} catch (err) {
-  console.error(`❌ Error writing ${path}:`, err.message);
+  fs.writeFileSync(filepath, html, 'utf-8');
+  console.log(`✅ Processed: ${filepath}`);
 }
+
+const allHtmlFiles = [
+  indexPath,
+  ...(fs.existsSync(sectionsDir)
+    ? fs.readdirSync(sectionsDir)
+        .filter(f => f.endsWith('.html'))
+        .map(f => path.join(sectionsDir, f))
+    : [])
+];
+
+allHtmlFiles.forEach(postprocessHtmlFile);
+
+console.log('\n🎯 Navigation menus updated for local + hosted use!');

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Dan’s AI Terminology Tracker</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  background-color: #1a1b26;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css">
+<link rel="icon" type="image/png" href="favicon/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+</head>
+<body style="background-color: #1a1b26;">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Inter', sans-serif; }
+  #toggleHeaderButton {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  #toggleHeaderButton:hover {
+    background-color: #555;
+  }
+</style>
+<button id="toggleHeaderButton">Hide Header</button>
+<div id="headerWrapper">
+  <header style="
+    padding: 2rem 1rem;
+    background-color: #0d0d0d;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid #222;
+  ">
+    <h1 style="font-size: 2.25rem; margin: 0; font-weight: 600;">
+      🧠 Dan’s AI Terminology Tracker
+    </h1>
+    <p style="margin-top: 0.75rem; font-size: 1.05rem; color: #aaa; max-width: 800px; margin-left: auto; margin-right: auto;">
+      A living map of key AI/ML concepts - grounded in Microsoft AI terminology.
+    </p>
+    <p style="margin-top: 0.5rem; font-size: 0.95rem; color: #666;">
+      By Daniel McLoughlin ☁️ &nbsp;|&nbsp;
+      <a href="https://daniel.mcloughlin.cloud/" target="_blank" style="color: #4da6ff; text-decoration: none;">
+        Visit my blog →
+      </a>
+      |&nbsp;
+      <a href="https://github.com/CloudDevDan/dans-ai-terminology-tracker" target="_blank" style="color: #4da6ff; text-decoration: none;">
+        Project repo →
+      </a>
+    </p>
+    <p style="margin-top: 1.5rem; font-size: 1rem; color: white;">
+      Click a node 🟠 to get started.
+    </p>
+  
+<!-- MENU START -->
+<style>
+  nav {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  nav a {
+    text-decoration: none;
+    font-weight: 500;
+    background: #f2f4f8;
+    padding: 6px 14px;
+    border-radius: 8px;
+    color: #0078d4;
+    transition: background 0.2s;
+  }
+  nav a:hover {
+    background: #e0e6ee;
+  }
+</style>
+<nav>
+  <a href="../index.html">🧠 All Terms</a><a href="data-pipelines.html">Data-pipelines</a><a href="deep-learning.html">Deep-learning</a><a href="ethics-safety-governance.html">Ethics-safety-governance</a><a href="genai-platform-features.html">Genai-platform-features</a><a href="generative-ai.html">Generative-ai</a><a href="infrastructure-deployment.html">Infrastructure-deployment</a><a href="machine-learning.html">Machine-learning</a><a href="microsoft-ai-stack.html">Microsoft-ai-stack</a><a href="mlops-genaiops.html">Mlops-genaiops</a><a href="related-fields.html">Related-fields</a><a href="tools-frameworks.html">Tools-frameworks</a></nav>
+<!-- MENU END --></header>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const toggleBtn = document.getElementById('toggleHeaderButton');
+    const headerWrapper = document.getElementById('headerWrapper');
+    toggleBtn.addEventListener('click', function() {
+      if (headerWrapper.style.display === 'none') {
+        headerWrapper.style.display = '';
+        toggleBtn.textContent = 'Hide Header';
+      } else {
+        headerWrapper.style.display = 'none';
+        toggleBtn.textContent = 'Show Header';
+      }
+    });
+  });
+</script>
+
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Microsoft AI Stack","children":[{"content":"Platforms","children":[{"content":"<a href=\"https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning\" target=\"_blank\">Azure Machine Learning</a> &#x2013; Cloud platform for building, training, and deploying ML models at scale.","children":[],"payload":{"tag":"li","lines":"3,4"}},{"content":"<a href=\"https://azure.microsoft.com/en-us/products/ai-foundry/\" target=\"_blank\">Azure AI Foundry</a> &#x2013; End-to-end platform to accelerate the development of enterprise-ready, AI-powered applications.","children":[],"payload":{"tag":"li","lines":"4,5"}},{"content":"<a href=\"https://github.com/marketplace?type=actions&amp;query=model\" target=\"_blank\">GitHub Model Marketplace</a> &#x2013; Discover and integrate open models and tools into GitHub workflows.","children":[],"payload":{"tag":"li","lines":"5,7"}}],"payload":{"tag":"h3","lines":"2,3"}},{"content":"Services","children":[{"content":"<a href=\"https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview\" target=\"_blank\">Azure OpenAI</a> &#x2013; Perform a wide variety of natural language tasks using OpenAI models hosted on Azure.","children":[],"payload":{"tag":"li","lines":"8,9"}},{"content":"<a href=\"https://learn.microsoft.com/en-us/azure/ai-services/agents/overview\" target=\"_blank\">Azure AI Agent Service</a> &#x2013; Develop AI agents to automate and execute business processes.","children":[],"payload":{"tag":"li","lines":"9,10"}},{"content":"<a href=\"https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search\" target=\"_blank\">Azure AI Search</a> &#x2013; Bring AI-powered search to mobile and web applications.","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"<a href=\"https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview\" target=\"_blank\">Content Safety</a> &#x2013; An AI service that detects and filters unwanted or harmful content.","children":[],"payload":{"tag":"li","lines":"11,12"}},{"content":"<a href=\"https://learn.microsoft.com/en-us/azure/ai-services/speech-service/overview\" target=\"_blank\">Speech</a> &#x2013; Convert speech to text, text to speech, and recognize speakers.","children":[],"payload":{"tag":"li","lines":"12,13"}},{"content":"<a href=\"https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview\" target=\"_blank\">Document Intelligence</a> &#x2013; Extract structured data from documents and forms.","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"<a href=\"https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview\" target=\"_blank\">Vision</a> &#x2013; Analyze content in images and videos.","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"<a href=\"https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/overview\" target=\"_blank\">Custom Vision</a> &#x2013; Customize image recognition for specific business needs.","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"<a href=\"https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-identity\" target=\"_blank\">Face</a> &#x2013; Detect and identify people and emotions in images.","children":[],"payload":{"tag":"li","lines":"16,17"}},{"content":"<a href=\"https://learn.microsoft.com/en-us/azure/ai-services/translator/overview\" target=\"_blank\">Translator</a> &#x2013; Translate text across 100+ languages and dialects.","children":[],"payload":{"tag":"li","lines":"17,18"}},{"content":"<a href=\"https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview\" target=\"_blank\">Language</a> &#x2013; Add industry-leading NLU (natural language understanding) capabilities to your app.","children":[],"payload":{"tag":"li","lines":"18,19"}},{"content":"<a href=\"https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview\" target=\"_blank\">Content Understanding</a> &#x2013; Extract structured insights from multimodal content (text, images, etc.).","children":[],"payload":{"tag":"li","lines":"19,20"}},{"content":"<a href=\"https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/overview\" target=\"_blank\">Immersive Reader</a> &#x2013; Help users read and comprehend text more effectively.","children":[],"payload":{"tag":"li","lines":"20,22"}}],"payload":{"tag":"h3","lines":"7,8"}},{"content":"Products","children":[{"content":"<a href=\"https://www.microsoft.com/en-us/microsoft-copilot\" target=\"_blank\">Microsoft Copilot</a> &#x2013; Embedded AI assistant across Microsoft 365 apps like Word, Excel, and Outlook.","children":[],"payload":{"tag":"li","lines":"23,24"}},{"content":"<a href=\"https://learn.microsoft.com/en-us/microsoft-copilot-studio/overview\" target=\"_blank\">Microsoft Copilot Studio</a> &#x2013; Low-code platform for building custom AI copilots integrated with enterprise data.","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"<a href=\"https://learn.microsoft.com/en-us/ai-builder/overview\" target=\"_blank\">AI Builder</a> &#x2013; Add AI to Power Apps and Power Automate using prebuilt or custom models.","children":[],"payload":{"tag":"li","lines":"25,26"}},{"content":"<a href=\"https://learn.microsoft.com/en-us/power-virtual-agents/fundamentals-what-is-power-virtual-agents\" target=\"_blank\">Power Virtual Agents</a> &#x2013; Build chatbots without code using a guided interface and integrated AI.","children":[],"payload":{"tag":"li","lines":"26,28"}}],"payload":{"tag":"h3","lines":"22,23"}},{"content":"Microsoft Learning Resources","children":[{"content":"<a href=\"https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/\" target=\"_blank\">Azure AI Fundamentals (AI-900)</a> &#x2013; Learn core AI and ML concepts and how they&#x2019;re implemented in Azure.","children":[],"payload":{"tag":"li","lines":"29,30"}},{"content":"<a href=\"https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/\" target=\"_blank\">Azure AI Engineer Associate</a> &#x2013; Explore the skills and training required to pass the AI-102 certification.","children":[],"payload":{"tag":"li","lines":"30,31"}},{"content":"<a href=\"https://azure.github.io/ai-app-templates/\" target=\"_blank\">Build with AI</a> &#x2013; Get started with AI app templates. Edit and deploy directly to Azure using VS Code or GitHub Codespaces.","children":[],"payload":{"tag":"li","lines":"31,32"}},{"content":"<a href=\"https://ai.azure.com/labs\" target=\"_blank\">Azure AI Foundry Labs</a> &#x2013; Explore the latest AI innovations and accelerate your Azure AI journey.","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"<a href=\"https://learn.microsoft.com/en-us/azure/architecture/browse/?terms=AI\" target=\"_blank\">Azure AI Reference Architectures</a> &#x2013; Microsoft&#x2019;s blueprint scenarios for deploying AI solutions on Azure.","children":[],"payload":{"tag":"li","lines":"33,34"}}],"payload":{"tag":"h3","lines":"28,29"}}],"payload":{"tag":"h2","lines":"0,1"}},null)</script>
+</body>
+</html>

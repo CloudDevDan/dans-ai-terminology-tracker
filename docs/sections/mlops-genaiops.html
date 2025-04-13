@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Dan’s AI Terminology Tracker</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  background-color: #1a1b26;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css">
+<link rel="icon" type="image/png" href="favicon/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+</head>
+<body style="background-color: #1a1b26;">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Inter', sans-serif; }
+  #toggleHeaderButton {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  #toggleHeaderButton:hover {
+    background-color: #555;
+  }
+</style>
+<button id="toggleHeaderButton">Hide Header</button>
+<div id="headerWrapper">
+  <header style="
+    padding: 2rem 1rem;
+    background-color: #0d0d0d;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid #222;
+  ">
+    <h1 style="font-size: 2.25rem; margin: 0; font-weight: 600;">
+      🧠 Dan’s AI Terminology Tracker
+    </h1>
+    <p style="margin-top: 0.75rem; font-size: 1.05rem; color: #aaa; max-width: 800px; margin-left: auto; margin-right: auto;">
+      A living map of key AI/ML concepts - grounded in Microsoft AI terminology.
+    </p>
+    <p style="margin-top: 0.5rem; font-size: 0.95rem; color: #666;">
+      By Daniel McLoughlin ☁️ &nbsp;|&nbsp;
+      <a href="https://daniel.mcloughlin.cloud/" target="_blank" style="color: #4da6ff; text-decoration: none;">
+        Visit my blog →
+      </a>
+      |&nbsp;
+      <a href="https://github.com/CloudDevDan/dans-ai-terminology-tracker" target="_blank" style="color: #4da6ff; text-decoration: none;">
+        Project repo →
+      </a>
+    </p>
+    <p style="margin-top: 1.5rem; font-size: 1rem; color: white;">
+      Click a node 🟠 to get started.
+    </p>
+  
+<!-- MENU START -->
+<style>
+  nav {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  nav a {
+    text-decoration: none;
+    font-weight: 500;
+    background: #f2f4f8;
+    padding: 6px 14px;
+    border-radius: 8px;
+    color: #0078d4;
+    transition: background 0.2s;
+  }
+  nav a:hover {
+    background: #e0e6ee;
+  }
+</style>
+<nav>
+  <a href="../index.html">🧠 All Terms</a><a href="data-pipelines.html">Data-pipelines</a><a href="deep-learning.html">Deep-learning</a><a href="ethics-safety-governance.html">Ethics-safety-governance</a><a href="genai-platform-features.html">Genai-platform-features</a><a href="generative-ai.html">Generative-ai</a><a href="infrastructure-deployment.html">Infrastructure-deployment</a><a href="machine-learning.html">Machine-learning</a><a href="microsoft-ai-stack.html">Microsoft-ai-stack</a><a href="mlops-genaiops.html">Mlops-genaiops</a><a href="related-fields.html">Related-fields</a><a href="tools-frameworks.html">Tools-frameworks</a></nav>
+<!-- MENU END --></header>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const toggleBtn = document.getElementById('toggleHeaderButton');
+    const headerWrapper = document.getElementById('headerWrapper');
+    toggleBtn.addEventListener('click', function() {
+      if (headerWrapper.style.display === 'none') {
+        headerWrapper.style.display = '';
+        toggleBtn.textContent = 'Hide Header';
+      } else {
+        headerWrapper.style.display = 'none';
+        toggleBtn.textContent = 'Show Header';
+      }
+    });
+  });
+</script>
+
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"MLOps &amp; GenAIOps","children":[{"content":"MLOps Practices","children":[{"content":"Model Lifecycle","children":[{"content":"Training","children":[],"payload":{"tag":"li","lines":"4,5"}},{"content":"Evaluation","children":[],"payload":{"tag":"li","lines":"5,6"}},{"content":"Deployment","children":[],"payload":{"tag":"li","lines":"6,7"}},{"content":"Monitoring","children":[],"payload":{"tag":"li","lines":"7,8"}}],"payload":{"tag":"li","lines":"3,8"}},{"content":"Model Registry","children":[],"payload":{"tag":"li","lines":"8,9"}},{"content":"Model Versioning","children":[],"payload":{"tag":"li","lines":"9,10"}},{"content":"Model Drift","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"Data Drift","children":[],"payload":{"tag":"li","lines":"11,12"}},{"content":"Automated Retraining","children":[],"payload":{"tag":"li","lines":"12,13"}},{"content":"Pipeline Orchestration","children":[],"payload":{"tag":"li","lines":"13,15"}}],"payload":{"tag":"h3","lines":"2,3"}},{"content":"GenAIOps Additions","children":[{"content":"Prompt Testing","children":[],"payload":{"tag":"li","lines":"16,17"}},{"content":"Prompt Versioning","children":[],"payload":{"tag":"li","lines":"17,18"}},{"content":"LLM Evaluation","children":[],"payload":{"tag":"li","lines":"18,19"}},{"content":"Human-in-the-Loop (HITL)","children":[],"payload":{"tag":"li","lines":"19,20"}},{"content":"Synthetic Data","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"Agent Behavior Monitoring","children":[],"payload":{"tag":"li","lines":"21,23"}}],"payload":{"tag":"h3","lines":"15,16"}},{"content":"GenAIOps Tooling","children":[{"content":"<a href=\"https://github.com/microsoft/prompty\" target=\"_blank\">Prompty</a> &#x2013; Microsoft tool for prompt observability, understandability, and DevOps pipeline integration.","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"PromptFoo &#x2013; Prompt testing and evaluation framework.","children":[],"payload":{"tag":"li","lines":"25,26"}},{"content":"LangSmith &#x2013; Tracing and analytics for LLM chains.","children":[],"payload":{"tag":"li","lines":"26,27"}},{"content":"HoneyHive &#x2013; Human feedback for LLM evaluation.","children":[],"payload":{"tag":"li","lines":"27,28"}},{"content":"TruLens &#x2013; Trace and evaluate LLM behavior in real-time.","children":[],"payload":{"tag":"li","lines":"28,29"}},{"content":"LLM Guard &#x2013; Add safety filters and constraints to GenAI apps.","children":[],"payload":{"tag":"li","lines":"29,31"}}],"payload":{"tag":"h3","lines":"23,24"}},{"content":"Infrastructure","children":[{"content":"Inference Pipeline","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"Batch Inference","children":[],"payload":{"tag":"li","lines":"33,34"}},{"content":"Real-time Inference","children":[],"payload":{"tag":"li","lines":"34,35"}},{"content":"Containerization (Docker)","children":[],"payload":{"tag":"li","lines":"35,36"}},{"content":"Kubernetes","children":[],"payload":{"tag":"li","lines":"36,37"}},{"content":"CI/CD for ML","children":[],"payload":{"tag":"li","lines":"37,38"}}],"payload":{"tag":"h3","lines":"31,32"}}],"payload":{"tag":"h2","lines":"0,1"}},null)</script>
+</body>
+</html>

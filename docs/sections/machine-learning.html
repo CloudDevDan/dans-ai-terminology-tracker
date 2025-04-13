@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Dan’s AI Terminology Tracker</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  background-color: #1a1b26;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css">
+<link rel="icon" type="image/png" href="favicon/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+</head>
+<body style="background-color: #1a1b26;">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Inter', sans-serif; }
+  #toggleHeaderButton {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  #toggleHeaderButton:hover {
+    background-color: #555;
+  }
+</style>
+<button id="toggleHeaderButton">Hide Header</button>
+<div id="headerWrapper">
+  <header style="
+    padding: 2rem 1rem;
+    background-color: #0d0d0d;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid #222;
+  ">
+    <h1 style="font-size: 2.25rem; margin: 0; font-weight: 600;">
+      🧠 Dan’s AI Terminology Tracker
+    </h1>
+    <p style="margin-top: 0.75rem; font-size: 1.05rem; color: #aaa; max-width: 800px; margin-left: auto; margin-right: auto;">
+      A living map of key AI/ML concepts - grounded in Microsoft AI terminology.
+    </p>
+    <p style="margin-top: 0.5rem; font-size: 0.95rem; color: #666;">
+      By Daniel McLoughlin ☁️ &nbsp;|&nbsp;
+      <a href="https://daniel.mcloughlin.cloud/" target="_blank" style="color: #4da6ff; text-decoration: none;">
+        Visit my blog →
+      </a>
+      |&nbsp;
+      <a href="https://github.com/CloudDevDan/dans-ai-terminology-tracker" target="_blank" style="color: #4da6ff; text-decoration: none;">
+        Project repo →
+      </a>
+    </p>
+    <p style="margin-top: 1.5rem; font-size: 1rem; color: white;">
+      Click a node 🟠 to get started.
+    </p>
+  
+<!-- MENU START -->
+<style>
+  nav {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  nav a {
+    text-decoration: none;
+    font-weight: 500;
+    background: #f2f4f8;
+    padding: 6px 14px;
+    border-radius: 8px;
+    color: #0078d4;
+    transition: background 0.2s;
+  }
+  nav a:hover {
+    background: #e0e6ee;
+  }
+</style>
+<nav>
+  <a href="../index.html">🧠 All Terms</a><a href="data-pipelines.html">Data-pipelines</a><a href="deep-learning.html">Deep-learning</a><a href="ethics-safety-governance.html">Ethics-safety-governance</a><a href="genai-platform-features.html">Genai-platform-features</a><a href="generative-ai.html">Generative-ai</a><a href="infrastructure-deployment.html">Infrastructure-deployment</a><a href="machine-learning.html">Machine-learning</a><a href="microsoft-ai-stack.html">Microsoft-ai-stack</a><a href="mlops-genaiops.html">Mlops-genaiops</a><a href="related-fields.html">Related-fields</a><a href="tools-frameworks.html">Tools-frameworks</a></nav>
+<!-- MENU END --></header>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const toggleBtn = document.getElementById('toggleHeaderButton');
+    const headerWrapper = document.getElementById('headerWrapper');
+    toggleBtn.addEventListener('click', function() {
+      if (headerWrapper.style.display === 'none') {
+        headerWrapper.style.display = '';
+        toggleBtn.textContent = 'Hide Header';
+      } else {
+        headerWrapper.style.display = 'none';
+        toggleBtn.textContent = 'Show Header';
+      }
+    });
+  });
+</script>
+
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Machine Learning","children":[{"content":"Learning Paradigms","children":[{"content":"<a href=\"https://www.ibm.com/think/topics/supervised-learning\" target=\"_blank\">Supervised Learning</a> &#x2013; Learn from labeled data to make predictions.","children":[],"payload":{"tag":"li","lines":"3,4"}},{"content":"<a href=\"https://www.ibm.com/think/topics/unsupervised-learning\" target=\"_blank\">Unsupervised Learning</a> &#x2013; Find patterns in unlabeled data.","children":[],"payload":{"tag":"li","lines":"4,5"}},{"content":"<a href=\"https://en.wikipedia.org/wiki/Semi-supervised_learning\" target=\"_blank\">Semi-supervised Learning</a> &#x2013; Combine small labeled data with large unlabeled sets.","children":[],"payload":{"tag":"li","lines":"5,6"}},{"content":"<a href=\"https://www.ibm.com/think/topics/self-supervised-learning\" target=\"_blank\">Self-supervised Learning</a> &#x2013; Learn representations without human-labeled data.","children":[],"payload":{"tag":"li","lines":"6,7"}},{"content":"<a href=\"https://en.wikipedia.org/wiki/Reinforcement_learning\" target=\"_blank\">Reinforcement Learning</a> &#x2013; Learn through rewards and penalties via trial and error.","children":[],"payload":{"tag":"li","lines":"7,8"}},{"content":"<a href=\"https://en.wikipedia.org/wiki/Online_machine_learning\" target=\"_blank\">Online Learning</a> &#x2013; Continuously update the model with new data.","children":[],"payload":{"tag":"li","lines":"8,9"}},{"content":"<a href=\"https://en.wikipedia.org/wiki/Transfer_learning\" target=\"_blank\">Transfer Learning</a> &#x2013; Transfer knowledge from one task to another.","children":[],"payload":{"tag":"li","lines":"9,10"}},{"content":"<a href=\"https://en.wikipedia.org/wiki/Curriculum_learning\" target=\"_blank\">Curriculum Learning</a> &#x2013; Learn tasks in an easy-to-hard sequence.","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"<a href=\"https://en.wikipedia.org/wiki/Active_learning_%28machine_learning%29\" target=\"_blank\">Active Learning</a> &#x2013; Selectively query data to improve learning.","children":[],"payload":{"tag":"li","lines":"11,12"}},{"content":"<a href=\"https://research.ibm.com/blog/what-is-federated-learning\" target=\"_blank\">Federated Learning</a> &#x2013; Train models across decentralized data sources.","children":[],"payload":{"tag":"li","lines":"12,13"}},{"content":"<a href=\"https://www.ibm.com/think/topics/meta-learning\" target=\"_blank\">Meta Learning</a> &#x2013; Learn how to learn across tasks or models.","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"<a href=\"https://en.wikipedia.org/wiki/Multi-task_learning\" target=\"_blank\">Multi-task Learning</a> &#x2013; Learn multiple tasks with shared representations.","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"<a href=\"https://en.wikipedia.org/wiki/Few-shot_learning\" target=\"_blank\">Few-shot Learning</a> &#x2013; Learn from a very small number of examples.","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"<a href=\"https://en.wikipedia.org/wiki/Zero-shot_learning\" target=\"_blank\">Zero-shot Learning</a> &#x2013; Perform tasks with no labeled examples seen.","children":[],"payload":{"tag":"li","lines":"16,17"}},{"content":"<a href=\"https://en.wikipedia.org/wiki/Continual_learning\" target=\"_blank\">Continual Learning</a> &#x2013; Retain and build knowledge over time.","children":[],"payload":{"tag":"li","lines":"17,18"}},{"content":"<a href=\"https://huggingface.co/learn/nlp-course/chapter5/5?fw=pt\" target=\"_blank\">Contrastive Learning</a> &#x2013; Learn by distinguishing between similar and dissimilar examples.","children":[],"payload":{"tag":"li","lines":"18,20"}}],"payload":{"tag":"h3","lines":"2,3"}},{"content":"Core Concepts","children":[{"content":"<a href=\"https://learn.microsoft.com/en-us/azure/machine-learning/concept-azure-machine-learning-architecture#models\" target=\"_blank\">Model</a> &#x2013; A trained representation that maps input data to outputs based on learned patterns.","children":[],"payload":{"tag":"li","lines":"21,22"}},{"content":"<a href=\"https://learn.microsoft.com/en-us/azure/machine-learning/concept-data\" target=\"_blank\">Dataset</a> &#x2013; A collection of data used for training, validating, or testing models.","children":[],"payload":{"tag":"li","lines":"22,23"}},{"content":"<a href=\"https://en.wikipedia.org/wiki/Training,_validation,_and_test_data\" target=\"_blank\">Labeled Data</a> &#x2013; Data paired with correct output values used in supervised learning.","children":[],"payload":{"tag":"li","lines":"23,24"}},{"content":"<a href=\"https://en.wikipedia.org/wiki/Feature_(machine_learning)\" target=\"_blank\">Feature</a> &#x2013; An individual measurable property of the data used for making predictions.","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"<a href=\"https://learn.microsoft.com/en-us/azure/machine-learning/concept-azure-machine-learning-architecture#data-labels\" target=\"_blank\">Label</a> &#x2013; The target variable or output that the model aims to predict.","children":[],"payload":{"tag":"li","lines":"25,26"}},{"content":"<a href=\"https://www.ibm.com/cloud/learn/epoch-machine-learning\" target=\"_blank\">Epoch</a> &#x2013; One complete pass through the entire training dataset.","children":[],"payload":{"tag":"li","lines":"26,27"}},{"content":"<a href=\"https://en.wikipedia.org/wiki/Batch_normalization\" target=\"_blank\">Batch</a> &#x2013; A subset of training data used in a single iteration of model training.","children":[],"payload":{"tag":"li","lines":"27,28"}},{"content":"<a href=\"https://en.wikipedia.org/wiki/Loss_function\" target=\"_blank\">Loss Function</a> &#x2013; A function that measures the difference between predicted and actual outputs.","children":[],"payload":{"tag":"li","lines":"28,29"}},{"content":"<a href=\"https://en.wikipedia.org/wiki/Stochastic_gradient_descent\" target=\"_blank\">Optimizer</a> &#x2013; Algorithm used to minimize the loss function during training.","children":[],"payload":{"tag":"li","lines":"29,30"}},{"content":"<a href=\"https://en.wikipedia.org/wiki/Regularization_(mathematics)\" target=\"_blank\">Regularization</a> &#x2013; Techniques to reduce overfitting by penalizing model complexity.","children":[],"payload":{"tag":"li","lines":"30,31"}},{"content":"<a href=\"https://en.wikipedia.org/wiki/Overfitting\" target=\"_blank\">Overfitting</a> &#x2013; When a model learns the training data too well and performs poorly on new data.","children":[],"payload":{"tag":"li","lines":"31,32"}},{"content":"<a href=\"https://en.wikipedia.org/wiki/Underfitting\" target=\"_blank\">Underfitting</a> &#x2013; When a model is too simple to capture the patterns in the data.","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"<a href=\"https://en.wikipedia.org/wiki/Bias&#x2013;variance_tradeoff\" target=\"_blank\">Bias-Variance Tradeoff</a> &#x2013; Balancing error due to bias and variance to improve model performance.","children":[],"payload":{"tag":"li","lines":"33,34"}},{"content":"<a href=\"https://en.wikipedia.org/wiki/Hyperparameter_optimization\" target=\"_blank\">Hyperparameters</a> &#x2013; Configuration variables set before training that influence model behavior.","children":[],"payload":{"tag":"li","lines":"34,35"}},{"content":"Evaluation Metrics","children":[{"content":"<a href=\"https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html\" target=\"_blank\">Accuracy</a> &#x2013; Proportion of correct predictions made by the model.","children":[],"payload":{"tag":"li","lines":"36,37"}},{"content":"<a href=\"https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html\" target=\"_blank\">Precision</a> &#x2013; Proportion of predicted positives that are actually positive.","children":[],"payload":{"tag":"li","lines":"37,38"}},{"content":"<a href=\"https://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall_score.html\" target=\"_blank\">Recall</a> &#x2013; Proportion of actual positives that are correctly predicted.","children":[],"payload":{"tag":"li","lines":"38,39"}},{"content":"<a href=\"https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html\" target=\"_blank\">F1 Score</a> &#x2013; Harmonic mean of precision and recall.","children":[],"payload":{"tag":"li","lines":"39,40"}},{"content":"<a href=\"https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html\" target=\"_blank\">ROC-AUC</a> &#x2013; Measures a classifier&#x2019;s ability to distinguish between classes.","children":[],"payload":{"tag":"li","lines":"40,41"}}],"payload":{"tag":"li","lines":"35,41"}},{"content":"<a href=\"https://scikit-learn.org/stable/modules/cross_validation.html\" target=\"_blank\">Cross-validation</a> &#x2013; Technique for assessing model performance by splitting data into multiple train-test subsets.","children":[],"payload":{"tag":"li","lines":"41,43"}}],"payload":{"tag":"h3","lines":"20,21"}},{"content":"Algorithms","children":[{"content":"<a href=\"https://scikit-learn.org/stable/modules/linear_model.html#linear-regression\" target=\"_blank\">Linear Regression</a> &#x2013; Predicts a continuous outcome based on the linear relationship between features.","children":[],"payload":{"tag":"li","lines":"44,45"}},{"content":"<a href=\"https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression\" target=\"_blank\">Logistic Regression</a> &#x2013; Predicts binary or multiclass outcomes using a logistic function.","children":[],"payload":{"tag":"li","lines":"45,46"}},{"content":"<a href=\"https://scikit-learn.org/stable/modules/tree.html#classification\" target=\"_blank\">Decision Tree</a> &#x2013; A tree-like model used for classification or regression by learning decision rules.","children":[],"payload":{"tag":"li","lines":"46,47"}},{"content":"<a href=\"https://scikit-learn.org/stable/modules/ensemble.html#random-forests\" target=\"_blank\">Random Forest</a> &#x2013; An ensemble of decision trees that improves accuracy by averaging predictions.","children":[],"payload":{"tag":"li","lines":"47,48"}},{"content":"<a href=\"https://scikit-learn.org/stable/modules/neighbors.html#classification\" target=\"_blank\">k-Nearest Neighbors</a> &#x2013; Classifies data based on the majority label among its nearest neighbors.","children":[],"payload":{"tag":"li","lines":"48,49"}},{"content":"<a href=\"https://scikit-learn.org/stable/modules/svm.html\" target=\"_blank\">Support Vector Machine (SVM)</a> &#x2013; Finds the optimal boundary (hyperplane) that best separates classes in the feature space.","children":[],"payload":{"tag":"li","lines":"49,50"}},{"content":"<a href=\"https://scikit-learn.org/stable/modules/naive_bayes.html\" target=\"_blank\">Naive Bayes</a> &#x2013; Probabilistic classifier based on Bayes&#x2019; theorem with strong (naive) independence assumptions.","children":[],"payload":{"tag":"li","lines":"50,51"}},{"content":"<a href=\"https://xgboost.readthedocs.io/en/stable/\" target=\"_blank\">XGBoost</a> &#x2013; Gradient boosting framework known for speed and performance in structured data tasks.","children":[],"payload":{"tag":"li","lines":"51,52"}},{"content":"<a href=\"https://scikit-learn.org/stable/modules/ensemble.html#gradient-boosting\" target=\"_blank\">Gradient Boosting Machines</a> &#x2013; Builds models sequentially, each one correcting the errors of its predecessor.","children":[],"payload":{"tag":"li","lines":"52,53"}},{"content":"Clustering","children":[{"content":"<a href=\"https://scikit-learn.org/stable/modules/clustering.html#k-means\" target=\"_blank\">K-means</a> &#x2013; Partitions data into K clusters based on proximity to cluster centroids.","children":[],"payload":{"tag":"li","lines":"54,55"}},{"content":"<a href=\"https://scikit-learn.org/stable/modules/clustering.html#hierarchical-clustering\" target=\"_blank\">Hierarchical</a> &#x2013; Builds nested clusters by successively merging or splitting them.","children":[],"payload":{"tag":"li","lines":"55,56"}},{"content":"<a href=\"https://scikit-learn.org/stable/modules/clustering.html#dbscan\" target=\"_blank\">DBSCAN</a> &#x2013; Groups data based on density, identifying clusters of arbitrary shape and handling outliers.","children":[],"payload":{"tag":"li","lines":"56,57"}}],"payload":{"tag":"li","lines":"53,57"}},{"content":"Dimensionality Reduction","children":[{"content":"<a href=\"https://scikit-learn.org/stable/modules/decomposition.html#pca\" target=\"_blank\">PCA (Principal Component Analysis)</a> &#x2013; Reduces the dimensionality of data by projecting it onto principal components.","children":[],"payload":{"tag":"li","lines":"58,59"}},{"content":"<a href=\"https://scikit-learn.org/stable/modules/manifold.html#t-sne\" target=\"_blank\">t-SNE</a> &#x2013; Non-linear technique for visualizing high-dimensional data in 2 or 3 dimensions.","children":[],"payload":{"tag":"li","lines":"59,60"}},{"content":"<a href=\"https://umap-learn.readthedocs.io/en/latest/\" target=\"_blank\">UMAP</a> &#x2013; Fast and scalable dimensionality reduction technique for visualizing structure in data.","children":[],"payload":{"tag":"li","lines":"60,61"}}],"payload":{"tag":"li","lines":"57,61"}}],"payload":{"tag":"h3","lines":"43,44"}}],"payload":{"tag":"h2","lines":"0,1"}},null)</script>
+</body>
+</html>

@@ -29,9 +29,7 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <style>
-  body {
-    font-family: 'Inter', sans-serif;
-  }
+  body { font-family: 'Inter', sans-serif; }
   #toggleHeaderButton {
     position: fixed;
     top: 1rem;
@@ -77,7 +75,33 @@
     <p style="margin-top: 1.5rem; font-size: 1rem; color: white;">
       Click a node 🟠 to get started.
     </p>
-  </header>
+  
+<!-- MENU START -->
+<style>
+  nav {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  nav a {
+    text-decoration: none;
+    font-weight: 500;
+    background: #f2f4f8;
+    padding: 6px 14px;
+    border-radius: 8px;
+    color: #0078d4;
+    transition: background 0.2s;
+  }
+  nav a:hover {
+    background: #e0e6ee;
+  }
+</style>
+<nav>
+  <a href="index.html">🧠 All Terms</a><a href="sections/data-pipelines.html">Data-pipelines</a><a href="sections/deep-learning.html">Deep-learning</a><a href="sections/ethics-safety-governance.html">Ethics-safety-governance</a><a href="sections/genai-platform-features.html">Genai-platform-features</a><a href="sections/generative-ai.html">Generative-ai</a><a href="sections/infrastructure-deployment.html">Infrastructure-deployment</a><a href="sections/machine-learning.html">Machine-learning</a><a href="sections/microsoft-ai-stack.html">Microsoft-ai-stack</a><a href="sections/mlops-genaiops.html">Mlops-genaiops</a><a href="sections/related-fields.html">Related-fields</a><a href="sections/tools-frameworks.html">Tools-frameworks</a></nav>
+<!-- MENU END --></header>
 </div>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
